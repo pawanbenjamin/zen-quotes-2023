@@ -35,10 +35,10 @@ export default function Page() {
             }, 2000);
           }}
         >
-          <>
+          <View>
             <Image source={zenRound} style={styles.image} />
             <Image source={zenText} style={styles.image} />
-          </>
+          </View>
         </TouchableHighlight>
       </Animated.View>
     </View>
@@ -48,15 +48,17 @@ export default function Page() {
 const styles = StyleSheet.create({
   container: {
     // flex: 1,
-    display: "flex",
-    height: "100%",
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "#000"
+    // display: "flex",
+    // height: "100%",
+    // justifyContent: "space-around",
+    // alignItems: "center",
+    // justifyContent: "center",
+    // backgroundColor: "#000"
   },
   image: {
     width: 300,
     objectFit: "contain"
     // backgroundColor: "#0553"
-  }
+  },
+  imageContainer: {}
 });
